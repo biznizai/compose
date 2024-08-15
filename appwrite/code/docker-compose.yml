@@ -28,7 +28,7 @@ services:
       - appwrite
 
   appwrite:
-    image: appwrite/appwrite
+    image: appwrite/appwrite:latest
     <<: *x-logging
     restart: unless-stopped
     networks:
