@@ -796,13 +796,13 @@ services:
     volumes:
       - appwrite-redis:/data:rw
 
-  clamav:
-  image: appwrite/clamav:1.2.0
-  restart: unless-stopped
-  networks:
-   - appwrite
-  volumes:
-   - appwrite-uploads:/storage/uploads
+  # clamav:
+  #   image: appwrite/clamav:1.2.0
+  #   restart: unless-stopped
+  #   networks:
+  #     - appwrite
+  #   volumes:
+  #     - appwrite-uploads:/storage/uploads
 
 networks:
   gateway:
